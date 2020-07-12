@@ -1,0 +1,32 @@
+
+  #box1{
+    position: relative;
+
+  }
+  #box2{
+    position: relative;
+  }
+
+  #box3 {
+    position: absolute;
+    left: 50%;
+    bottom: 36%;
+  }
+  #previous{
+    position: relative;
+    left: 0%;
+  }
+  #next{
+    position: relative;
+    left: 55%;
+
+  }
+  #annul{
+    position: relative;
+    left: 27%;
+  }
+
+  #title{
+    position: relative;
+    border-bottom: 10px;
+  }
