@@ -1,0 +1,356 @@
+﻿<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" href="img/logoEPA.jpg" type="image/png">
+        <title>EPA Ensemble Pour l’AFRIQUE</title>
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="vendors/linericon/style.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
+        <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+        <link rel="stylesheet" href="vendors/animate-css/animate.css">
+        <!-- main css -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <link rel="stylesheet" href="login.css">
+        <style>
+            #user_div{
+                cursor: pointer;
+            }
+            .map-container,
+            .map-container-2,
+            .map-container-3,
+            .map-container-4,
+            .map-container-5,
+            .map-container-6,
+            .map-container-7 {
+              overflow: hidden;
+              padding-bottom: 56.25%;
+              position: relative;
+              height: 0;
+            }
+
+            .map-container iframe,
+            .map-container-2 iframe,
+            .map-container-3 iframe,
+            .map-container-4 iframe,
+            .map-container-5 iframe,
+            .map-container-6 iframe,
+            .map-container-7 iframe {
+              left: 0;
+              top: 0;
+              height: 100%;
+              width: 100%;
+              position: absolute;
+            }
+        </style>
+    </head>
+    <body>
+        <!--================Header Menu Area =================-->
+        <header class="header_area">
+            <div class="top_menu row m0">
+                <div class="container">
+                    <div class="float-left">
+                        <ul class="list header_social">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><div id="nom" style="color:black;"></div></li>
+                        </ul>
+                    </div>
+                    <div class="float-right">
+                        <select class="lan_pack" style="float:left">
+                            <option value="1">Français</option>
+                            <option value="1">English</option>
+                        </select>
+                        <a id="login_div" class="ac_btn" href="seconnecter.html">Mon Compte</a>
+                        <a id="user_div" class="ac_btn" onclick="logout()">Se D&#xE9;connecter</a>
+                        <a class="dn_btn" href="donation.html">Faire Un Don</a>
+                    </div>
+                </div>
+            </div>
+            <div class="main_menu">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                            <ul class="nav navbar-nav menu_nav ml-auto">
+                                <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                                <li id="administration" class="nav-item submenu dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Administration</a>
+                                    <ul class="dropdown-menu">
+                                        <li id="reunion" class="nav-item"><a class="nav-link" href="gestion-reunion.html">Gestion des réunions</a></li>
+                                        <li id="convocation" class="nav-item"><a class="nav-link" href="gestion-convocation.html">Convocations</a></li>
+                                        <li id="finance" class="nav-item"><a class="nav-link" href="#">Gestion financière</a></li>
+                                    </ul>
+                                </li> 
+                                <li id="li1" class="nav-item"><a class="nav-link" href="reunion.html">Réunions</a></li>
+                                <li id="li2" class="nav-item"><a class="nav-link" href="notification.html">Notifications</a></li>
+                                <li class="nav-item"><a class="nav-link" href="forum.html">Forum</a></li>
+                                <li class="nav-item active"><a class="nav-link" href="base-documentaire.html">Documentation</a></li>
+                                <li class="nav-item"><a class="nav-link" href="accompagnement.html">Accompagnement</a></li>
+                                <li class="nav-item"><a class="nav-link" href="about-us.html">L'association</a></li>
+                                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <!--================Home Banner Area =================-->
+        <section class="banner_area">
+            <div class="banner_inner d-flex align-items-center">
+                <div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
+                <div class="container">
+                    <div class="banner_content text-center">
+                        <h2>Projet</h2>
+                        <div class="page_link">
+                            <a href="index.html">Accueil</a>
+                            <a href="base-documentaire.html">Documentation</a>
+                            <a href="base-doc-theme.html">Projets</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--================End Home Banner Area =================-->
+        <!--================Event Details Area =================-->
+        <section class="event_details_area p_120">
+            <div class="container">
+                <div class="event_d_inner">
+                    <div class="row event_text_inner">
+                        <div class="col-lg-4">
+                            <div class="left_text">
+                                <img class="img-fluid" src="img/base-docu/b4.png" alt="">
+                                <ul class="list">
+                                    <li><a href="#"><i class="lnr lnr-calendar-full"></i>26 mars 2020</a></li>
+                                    <li><a href="#"><i class="lnr lnr-location"></i>Togo, Afrique</a></li>
+                                </ul>
+                            </div>
+                            <section>
+                                <!--Google map-->
+                                <div id="map-container-google-1" class="z-depth-1-half map-container mb-5" style="height: 300px; margin-top:30px">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4039596.0667071147!2d-1.4177841705029761!3d8.603868310246202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1023e1c113185419%3A0xfaae5b301ad19360!2sTogo!5e0!3m2!1sfr!2sfr!4v1585225322040!5m2!1sfr!2sfr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="right_text">
+                                <h4>Dispensaire pour soigner les malades porteurs du VIH au Togo</h4>
+                                <p style="text-indent: 40px;">L’Organisation mondiale de la santé et l’Unicef a publié un rapport qui indique que plus de deux millions d’adolescents âgés de 10 à 19 ans vivent avec le VIH dans le monde et qu’un grand nombre d’entre eux ne bénéficient pas des soins et du soutien dont ils auraient besoin pour rester en bonne santé et éviter de transmettre le virus.</p>
+                                <p style="text-indent: 40px;">Elle recommande la prise en compte des besoins spécifiques des adolescents, encourage le dépistage systématique et volontaire. En outre, il met un accent sur la mise en place des services adaptés aux adolescents pour faciliter l’obtention de résultats thérapeutiques.</p>
+                                <p style="text-indent: 40px;">Grâce à vos dons, nous avons financé des dispensaires afin de traiter les personnes malades.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--================End Event Details Area =================-->
+        <!--================ start footer Area  =================-->
+        <footer class="footer-area section_gap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3  col-md-6 col-sm-6">
+                        <div class="single-footer-widget">
+                            <h6 class="footer_title">L'association</h6>
+                            <p>
+                                EPA a pour but la rencontre de personnes d’horizons et de pays différents mais partageant la même espérance pour l’Afrique et pour le monde.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="single-footer-widget">
+                            <h6 class="footer_title">Liens de navigation</h6>
+                            <div class="row">
+                                <div class="col-4">
+                                    <ul class="list">
+                                        <li><a href="index.html">Accueil</a></li>
+                                        <li><a href="forum.html">Forum</a></li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-4">
+                                    <ul class="list">
+                                        <li><a href="base-documentaire.html">Documentation</a></li>
+                                        <li><a href="about-us.html">L'association</a></li>
+                                        <li><a href="accompagnement.html">Accompagnement</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="single-footer-widget">
+                            <h6 class="footer_title">Lettre d'information</h6>
+                            <p>Veuillez saisir votre adresse mail pour s'abonner à la lettre d'information.</p>
+                            <div id="mc_embed_signup">
+                                <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscribe_form relative">
+                                    <div class="input-group d-flex flex-row">
+                                        <input name="EMAIL" placeholder="Adresse email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Adresse email '" required="" type="email">
+                                        <button class="btn sub-btn"><span class="lnr lnr-location"></span></button>
+                                    </div>
+                                    <div class="mt-10 info"></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="single-footer-widget instafeed">
+                            <h6 class="footer_title">InstaFeed</h6>
+                            <ul class="list instafeed d-flex flex-wrap">
+                                <li><img src="img/instagram/Image-01.jpg" alt=""></li>
+                                <li><img src="img/instagram/Image-02.jpg" alt=""></li>
+                                <li><img src="img/instagram/Image-03.jpg" alt=""></li>
+                                <li><img src="img/instagram/Image-04.jpg" alt=""></li>
+                                <li><img src="img/instagram/Image-05.jpg" alt=""></li>
+                                <li><img src="img/instagram/Image-06.jpg" alt=""></li>
+                                <li><img src="img/instagram/Image-07.jpg" alt=""></li>
+                                <li><img src="img/instagram/Image-08.jpg" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="border_line"></div>
+                <div class="row footer-bottom d-flex justify-content-between align-items-center">
+                    <p class="col-lg-8 col-md-8 footer-text m-0">
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        Copyright &copy;
+                        <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </p>
+                    <div class="col-lg-4 col-md-4 footer-social">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--================ End footer Area  =================-->
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+    https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="/__/firebase/7.13.1/firebase-analytics.js"></script>
+
+        <!-- Initialize Firebase -->
+        <script src="/__/firebase/init.js"></script>
+
+
+        <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+        <script>
+            // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyCCVtLOXmCSl-Q_hfovr4G6jkUT8nBgHx4",
+            authDomain: "epa2020-cd664.firebaseapp.com",
+            databaseURL: "https://epa2020-cd664.firebaseio.com",
+            projectId: "epa2020-cd664",
+            storageBucket: "epa2020-cd664.appspot.com",
+            messagingSenderId: "672890467633",
+            appId: "1:672890467633:web:0682ca03e5e288d52c6c10"
+        };
+        firebase.initializeApp(config);
+       var userID = sessionStorage.getItem("id ");
+        window.onload=displayNotificationsIcon();
+
+        function displayNotificationsIcon()
+        {
+            //First get the list-secretaire and list-notification attributes to get their size            
+            var ref = firebase.database().ref("/profil/"+userID);
+            ref.once("value")
+              .then(function(snapshot) {
+                var ns = snapshot.child("liste-secretaire").numChildren(); 
+                var nn = snapshot.child("liste-notifications").numChildren();
+                if (ns>0)
+                {
+                  var adminButton = document.querySelector("#administration");
+                  var adminIcon = document.createElement("span");
+                  
+                  var adminNumber = document.createTextNode(ns); //To replace with size of the list-secretaire
+                  
+                  adminIcon.style.backgroundColor = '#ea2c58';
+                  adminIcon.style.color = "white";
+                  adminIcon.style.borderRadius = "50%";
+                  adminIcon.style.display = "inline-block";
+                  adminIcon.style.width = "25px";
+                  adminIcon.style.textAlign = "center";
+                  adminIcon.style.position = "relative";
+                  adminIcon.style.right = "1px";
+                  adminIcon.style.top = "-12px";
+                  adminIcon.appendChild(adminNumber);
+                  adminButton.insertBefore(adminIcon, adminButton.lastChild);
+
+
+                    var convocButton = document.querySelector("#convocation");
+                    var adminIcon2 = document.createElement("span");
+                    var adminNumber2 = document.createTextNode(ns); //To replace with size of the list-secretaire
+
+                    adminIcon2.style.backgroundColor = '#ea2c58';
+                    adminIcon2.style.color = "white";
+                    adminIcon2.style.borderRadius = "50%";
+                    adminIcon2.style.display = "inline-block";
+                    adminIcon2.style.width = "25px";
+                    adminIcon2.style.textAlign = "center";
+                    adminIcon2.style.position = "relative";
+                    adminIcon2.style.right = "-161px";
+                    adminIcon2.style.top = "-37px";
+                    adminIcon2.appendChild(adminNumber2);
+                    convocButton.appendChild(adminIcon2);
+
+                }
+                 
+                if (nn>0)
+                {
+                  var notifButton = document.getElementById("li2");
+                  var notifIcon = document.createElement("span");
+                  var notifNumber = document.createTextNode(nn); //To replace with size of the list-notification
+             
+                  // notifIcon.class = "notif-number";
+
+                  notifIcon.style.backgroundColor = '#ea2c58';
+                  notifIcon.style.color = "white";
+                  notifIcon.style.borderRadius = "50%";
+                  notifIcon.style.display = "inline-block";
+                  notifIcon.style.width = "25px";
+                  notifIcon.style.textAlign = "center";
+                  notifIcon.style.position = "relative";
+                  notifIcon.style.right = "1px";
+                  notifIcon.style.top = "-12px";
+                  notifIcon.appendChild(notifNumber);
+                  notifButton.appendChild(notifIcon);
+                }
+              }); 
+        }
+        </script>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/popper.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/stellar.js"></script>
+        <script src="vendors/lightbox/simpleLightbox.min.js"></script>
+        <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+        <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+        <script src="vendors/isotope/isotope-min.js"></script>
+        <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+        <script src="js/jquery.ajaxchimp.min.js"></script>
+        <script src="js/mail-script.js"></script>
+        <script src="js/theme.js"></script>
+        <script src="login.js"></script>
+        <script src="logout.js"></script>
+    </body>
+</html>
